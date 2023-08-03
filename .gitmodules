@@ -37,7 +37,7 @@
 
 [submodule "dots/shared/home/.config/astronvim/lua/user"]
 	path = dots/shared/home/.config/astronvim/lua/user
-	url = https://github.com/khaneliman/astronvim.git
+	url = https://github.com/thedanielfactor/astronvim-user.git
 
 [submodule "dots/shared/home/.oh-my-bash"]
 	path = dots/shared/home/.oh-my-bash
