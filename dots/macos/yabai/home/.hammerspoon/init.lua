@@ -10,19 +10,24 @@ spoon.MiroWindowsManager:bindHotkeys({
   down = { hyper, "down" },
   left = { hyper, "left" },
   fullscreen = { hyper, "f" },
-  nextscreen = { hyper, "n" }
+  nextscreen = { hyper, "n" },
 })
 
 require("slowq") -- Avoid accidental Cmd-Q
 
-hs.hotkey.bind(hyper, "P", function() hs.openPreferences() end)
-hs.hotkey.bind(hyper, "R", function() hs.reload() end)
+hs.hotkey.bind(hyper, "P", function()
+  hs.openPreferences()
+end)
+hs.hotkey.bind(hyper, "R", function()
+  hs.reload()
+end)
 
 hs.loadSpoon("ReloadConfiguration")
 spoon.ReloadConfiguration:start()
 
 hs.loadSpoon("ClipboardTool")
 spoon.ClipboardTool:start()
+spoon.ClipboardTool:bindHotkeys({ toggle_clipboard = { hyper, "L" } })
 
 hs.loadSpoon("ColorPicker")
 spoon.ColorPicker:start()
